@@ -66,6 +66,7 @@ header {
 
 .dropdown {
   position: relative;
+  display: inline-block;
 }
 
 .dropdown-menu {
@@ -83,6 +84,7 @@ header {
   left: -90%;
   opacity: 0;
   visibility: hidden;
+  z-index: 1000;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
