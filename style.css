@@ -431,3 +431,83 @@ header {
 .contact-forms-btn:hover {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
+
+/*Footer */
+.footer-map {
+  background-color: #e5e7ec;
+  color: #fff;
+  padding: 20px 0;
+  border-top: 1px solid #ededed !important;
+}
+.footer-map .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-contact,
+.footer-links,
+.footer-about,
+.footer-map-container {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+}
+.footer-contact h3,
+.footer-links h3,
+.footer-about h3,
+.footer-map-container h3 {
+  color: black;
+  margin-bottom: 10px;
+}
+.footer-contact p {
+  margin: 5px 0;
+  color: #444444;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social-icons li {
+  display: inline;
+}
+.social-icons li a {
+  width: 50px;
+  height: 50px;
+  color: #34495e;
+  text-decoration: none;
+}
+.footer-links ul,
+.footer-about ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li,
+.footer-about li {
+  margin: 5px 0;
+}
+.footer-links a,
+.footer-about a {
+  color: #444444;
+  text-decoration: none;
+}
+.footer-links a:hover,
+.footer-about a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-map .container {
+    justify-content: center;
+    text-align: center;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
