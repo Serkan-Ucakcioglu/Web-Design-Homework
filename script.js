@@ -6,21 +6,27 @@ const responsiveDropDown = document.querySelector(".dropdown-menu2");
 const responsiveDrop = document.querySelector(".dropdown-responsive");
 const caret = document.querySelector(".caret");
 
-// Hamburger butonuna tıklanınca navbar'ı aç
 hamburgerBtn.addEventListener("click", () => {
   responsiveNavBar.classList.add("open");
 });
-
-// Navbar'ı kapatma butonuna tıklanınca navbar'ı kapat
 closeNavbar.addEventListener("click", () => {
   responsiveNavBar.classList.remove("open");
 });
 
-// Dropdown menüsünün tıklanabilir olmasını sağla
-responsiveDrop.addEventListener("click", (e) => {
-  e.preventDefault(); // Linkin varsayılan davranışını engelle
-  responsiveDropDown.classList.toggle("toggle");
+dropdowns.forEach((dropdown) => {
+  const menu = dropdown.querySelector(".dropdown-menu");
 
-  // İkonun dönüşmesini sağla
+  dropdown.addEventListener("mouseenter", () => {
+    dropdown.classList.add("open");
+  });
+
+  dropdown.addEventListener("mouseleave", (e) => {
+    if (e.relatedTarget && dropdown.contains(e.relatedTarget)) return;
+    dropdown.classList.remove("open");
+  });
+});
+
+responsiveDrop.addEventListener("click", () => {
+  responsiveDropDown.classList.toggle("toggle");
   caret.classList.toggle("rotate");
 });
