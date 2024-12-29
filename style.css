@@ -306,6 +306,12 @@ header {
   color: white;
 }
 
+.news-btn:hover {
+  background: white;
+  color: #f5932d;
+  border: 0.5px solid #f5932d;
+}
+
 @media screen and (max-width: 992px) {
   .news-card-list {
     flex-direction: column;
