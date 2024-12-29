@@ -270,6 +270,7 @@ header {
   justify-content: center;
   align-items: center;
   max-width: 370px;
+  padding-bottom: 5px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
 }
 .news-card img {
@@ -303,4 +304,11 @@ header {
   text-align: center;
   padding: 10px;
   color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .news-card-list {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
