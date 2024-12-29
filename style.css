@@ -134,6 +134,11 @@ header {
   width: 100%;
 }
 
+.merco {
+  object-fit: cover;
+  object-position: center;
+}
+
 .swiper-slide img {
   width: 100%;
   height: 100%;
